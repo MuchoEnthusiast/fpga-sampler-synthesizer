@@ -1,0 +1,18 @@
+Echo RAM inference optimization
+
+Observed issue: the earlier complete-top GHDL synthesis netlist represented
+4096x16 delay_ram as a flat 65536-bit register vector and associated mux logic.
+This was a GHDL inference observation, not evidence of a Vivado mapping failure.
+
+Change: separate the memory into a canonical clocked read/write process with
+explicit enables and no RAM/read-register reset. The FSM derives the enables;
+rst disables both ports. A shared combinational saturated sum feeds both the
+RAM write and wet output. Reset continues to invalidate history by filled_count.
+
+Preserved: signed16 arithmetic, arithmetic-shift feedback including negative
+rounding, feedback updates during bypass, accepted inputN -> outputN+1,
+one transaction every two clocks, and reset cancellation of pending work.
+
+Validation: tb_delay_effect at depths1/4/5 and tb_effects_chain all PASS. GHDL
+standalone default synthesis now reports RAM width16 depth4096. The standalone
+netlist is18024bytes. This does not establish Vivado resource use or timing.

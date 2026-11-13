@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "tests": [
+    "tb_delay_effect_depth1",
+    "tb_delay_effect_depth4",
+    "tb_delay_effect_depth5",
+    "tb_effects_chain"
+  ],
+  "before_sha256": "ff2d14dfdc6e1ec6daf2b8cbf8a1ff93e831a7008c959bf6fa6ce170300d23f4",
+  "after_sha256": "01cd3a00f241301496e6f5c51965f18088cb8fc438e0628ae82a48a1855fd337",
+  "generic_inference": "GHDL found RAM width16 depth4096",
+  "vivado": "UNRUN"
+}

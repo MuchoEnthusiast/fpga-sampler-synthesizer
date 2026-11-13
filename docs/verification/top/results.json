@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "simulation_time_ns": 6621626,
+  "clock_hz": 100000000,
+  "pdm_hz": 2000000,
+  "audio_hz": 16000,
+  "record_samples": 32,
+  "simulation_acceleration": [
+    "UART16systemclocks/bit",
+    "debounce2clocks",
+    "microphonewarmup100clocks"
+  ],
+  "source_sha256": {
+    "src/core/common/audio_pkg.vhd": "9cb4846536248a9a74a577dd3f98ffeae3f64a0d1b7e8bc44cdc998942f82de3",
+    "src/core/common/sample_tick_generator.vhd": "12a7431e4a7da941f3e7d796470b3ec13ed5c16e18123b4de32975a9b9f42a1c",
+    "src/core/common/input_synchronizer.vhd": "d721ebad389e10918681d1e8c34923817cbdb2f90c93789b1a674bd79f97a797",
+    "src/core/common/button_debouncer.vhd": "9f2be76c3d09745c4d601f4aa7fe1bd851bc5e4c0fe4c9fa278cdfca7cb5e173",
+    "src/core/interfaces/uart_rx.vhd": "eb8d32a94cab0ea96b4942abcbce3d1bd737e0460c57c65693311559f4d8d171",
+    "src/core/interfaces/pdm_capture.vhd": "fd133ba91b0c4bb547147706f67104116b6d4e0c730331593fa1d86eb6a86e41",
+    "src/core/control/note_command_decoder.vhd": "b7d7795c84be36be65739ee69a434e8a2f776242dfc8237d3eb7b2fd5dff1c69",
+    "src/core/control/note_event_manager.vhd": "23d50557e6942c474ddc3893fc15d158acc2abbf454adde691d5e191330224e7",
+    "src/core/memory/sample_ram.vhd": "530abb8ed2b31cc91091fb9a975148952a4eff5c15f3a7c006b97bc324701fff",
+    "src/core/memory/record_controller.vhd": "2d6f45b5253d02be75f6236933eeafb9aa44bfadca4192ce46b130eebf213e64",
+    "src/core/audio/phase_accumulator.vhd": "80440714cc970f38a6c476a381713d6e330ce5d5698f474b0f2156ca9463d4ab",
+    "src/core/audio/linear_interpolator.vhd": "866df4ed592f925ee62f39c101e97fa396a4e4f561d3c021c2399e6ae9810ccf",
+    "src/core/audio/sample_player.vhd": "0a0fe06bb6ffb3d1fcf5c4a7fd88042a3b3ba27ce9501eb86207b64a2e8a1c3c",
+    "src/core/audio/pdm_decimator.vhd": "c1d2bb2040586ce26ac91d6f5fcf9ee3585a6c0e91d5a62957a053cdeadbfa88",
+    "src/core/audio/dc_blocker.vhd": "a66776000886fdb289e8fa9ee1f0577dfd5e340d04277a986ab8b99c6c33a792",
+    "src/core/audio/adsr_envelope.vhd": "b94d242f6138faaf9ec295fd02561ef7ea90d06bd3d7a2ccf2748a09fc45aa51",
+    "src/core/audio/audio_gain.vhd": "a0da2e492550715f9d0fded8fe0fca23b1786558ac42a69139b3c1d5960207ce",
+    "src/core/effects/distortion.vhd": "71587d2ac25fd7af8eb07b95cc3fdfdb8b5a715af36c00f9a238c8a8e4f49895",
+    "src/core/effects/delay_effect.vhd": "ff2d14dfdc6e1ec6daf2b8cbf8a1ff93e831a7008c959bf6fa6ce170300d23f4",
+    "src/core/interfaces/pwm_generator.vhd": "a81519f174cf94fba7fe8a3ecf52f971f5fc70713ecf69651dc820876d1cb45a",
+    "src/core/audio/sampler_core.vhd": "29e655fec6804f5b21684c5d37aa85dc92b46ae4db060fa914b3c3f933a19d74",
+    "src/platform/nexys4ddr/top_nexys4ddr.vhd": "572523d466a1a9b7b05353901ffbf09954a27864998a112fa2a92031b5ff7f9a",
+    "sim/integration/tb_top_nexys4ddr.vhd": "9cab48ba2e8364f1b0e0e45492278b9af91ac15d9cd82189d26ab9db3e03c25b"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "Independent Tcl mocks and Python/static checks only; Vivado, XSim, PowerShell, implementation and hardware NOT executed by these tests.",
+  "utc": "2026-11-12T23:12:07.411209+00:00",
+  "python": "3.12.14",
+  "status": "PASS",
+  "tests": 17,
+  "source_sha256": {
+    "docs/vivado_pipeline.md": "842e856d745c7123f209696d6e59c698d8adceb5ec5e5d8248cc47937aa794b9",
+    "tools/merge_reports.ps1": "68f347db7c2295effd6a0a029c85a5d8af5afebfedaa6d593de7e08ba9635390",
+    "tools/run_ghdl.py": "db673f956591377a4589cb82dc6702cebe705b9f2b814d3c421e9493f79e14d3",
+    "tools/test_build_flow.py": "6033fc66d9ba18de207b0b380b24b9036a925baee211c2d8c51f43108e593965",
+    "vivado/create_project.tcl": "c452af760a7193b121681260c7b16b52f9d2fcb324e51d074abdc8002cb17f44",
+    "vivado/export_reports.tcl": "6a037382ddb903ed1b5aefd6759917120b33e22a07fbae14339276a7a04d545d",
+    "vivado/regression.tcl": "282a852bb13130ce1d8217050746fece7d6e92f0935d3897d42e389860c2a2b9",
+    "vivado/run_all.tcl": "1fc786e5be211a1c1b973bf8835727bfcc72763502368eca122e572c96fb55fa",
+    "vivado/sources.tcl": "5a1f49c71604fad2b64e049d68b6ba271167314673689d87956b7b1bad00b791",
+    "vivado/stage_memory.tcl": "ec051b1433f5c1687621113e8e28d8327404cbdd20a2c72f43db1ad33f4d7b82"
+  },
+  "documentation_note": "After the mock test run, the waveform guide description was corrected to distinguish recorded-PCM core coverage from full microphone coverage. Executable files are unchanged."
+}

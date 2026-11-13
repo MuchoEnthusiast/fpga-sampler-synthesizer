@@ -1,0 +1,30 @@
+--- uploaded/05_ADSR_envelope.vhd
++++ src/core/audio/adsr_envelope.vhd
+@@ -1,4 +1,4 @@
+--- Stage 05: pipelined ADSR envelope, experimental RTL (VHDL-2008).
++-- Preserved validated Stage 05 pipelined ADSR (VHDL-2008).
+ -- Single 100 MHz clock; sample_tick is a synchronous clock enable.
+ -- Exactly one output transaction is committed 2 clocks after each sample_tick.
+ -- REQUIREMENT: sample_tick pulses must be at least 3 clock periods apart.
+@@ -13,7 +13,7 @@
+ use ieee.std_logic_1164.all;
+ use ieee.numeric_std.all;
+ 
+-entity dbg_adsr_envelope is
++entity adsr_envelope is
+     port (
+         clk           : in  std_logic;
+         rst           : in  std_logic;  -- synchronous, active high
+@@ -29,9 +29,9 @@
+         done_pulse    : out std_logic;
+         gain_valid    : out std_logic
+     );
+-end entity dbg_adsr_envelope;
+-
+-architecture rtl of dbg_adsr_envelope is
++end entity adsr_envelope;
++
++architecture rtl of adsr_envelope is
+     subtype level_t is unsigned(15 downto 0);
+     subtype rate_t  is unsigned(31 downto 0);
+     subtype sum_t   is unsigned(32 downto 0);
