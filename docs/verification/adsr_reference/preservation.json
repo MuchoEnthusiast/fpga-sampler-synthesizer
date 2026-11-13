@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "normalizations": [
+    "CRLF to LF",
+    "dbg_adsr_envelope renamed to adsr_envelope",
+    "first explanatory comment changed"
+  ],
+  "uploaded_sha256": "86715c97c896d60e8e5a921ca04a8f62f543572aaf3b6b69e8521f14f7b0fda0",
+  "production_sha256": "b94d242f6138faaf9ec295fd02561ef7ea90d06bd3d7a2ccf2748a09fc45aa51",
+  "identical_normalized_contents": true,
+  "timing_contract": {
+    "tick_edge": "N",
+    "gain_valid_edge": "N+2",
+    "minimum_tick_spacing_clocks": 3
+  },
+  "historical_report_sha256": {
+    "05_ADSR_pipelined_impl_timing.rpt": "532bb501df1833f14156cfacafe587016b60fa856120ea850d4c169dadfdb2e0",
+    "05_ADSR_hw_corrected_timing.rpt": "8d45a39ebf347800239aa7fb70e3bea4dc9f34691af34cb3552d2a203061087a",
+    "07_INTEGRATION_impl_1_timing.rpt": "5569a2fb3fb358a2d54e9933a75e8208a95e8fe3a07a0eeea2fbf9baee464d5e"
+  }
+}

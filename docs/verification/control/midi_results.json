@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "tests": 16,
+  "scope": "PC MIDI bridge unit tests; no serial or MIDI hardware used. Existing successful test log is unchanged.",
+  "log": "midi_bridge.log",
+  "source_sha256": {
+    "tools/midi_bridge.py": "cf6d5a6a4a6908b52ace9e953ec5a53c6006fb7e43ed3564328bfba3cc7a4c25",
+    "tools/test_midi_bridge.py": "682dc8869352129c0ad89357355d22111e2473ca90bf47b078ceb2a4e4efe2d3"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "src/core/audio/adsr_envelope.vhd": "b94d242f6138faaf9ec295fd02561ef7ea90d06bd3d7a2ccf2748a09fc45aa51",
+  "src/core/interfaces/uart_rx.vhd": "eb8d32a94cab0ea96b4942abcbce3d1bd737e0460c57c65693311559f4d8d171",
+  "src/core/control/note_command_decoder.vhd": "b7d7795c84be36be65739ee69a434e8a2f776242dfc8237d3eb7b2fd5dff1c69",
+  "src/core/control/note_event_manager.vhd": "23d50557e6942c474ddc3893fc15d158acc2abbf454adde691d5e191330224e7",
+  "sim/unit/tb_adsr_envelope.vhd": "f886fb9108e3fec59559175b4f6a3bb50a9bc7baaa50d5e5dad52ff1c5c00782",
+  "sim/unit/tb_uart_control.vhd": "2940c2cc5549782dbad9f51bab88d98248b874f6e33afa409eea9faf700af05c",
+  "sim/unit/tb_note_event_manager.vhd": "a89d0eadc91c566df41bcf563311f0395bfaaddcca097bc9c675ef786b4a4ad3"
+}

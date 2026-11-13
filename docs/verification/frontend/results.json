@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-11-12T23:11:59.363276+00:00",
+  "command": [
+    "/workspace/scratch/05c372ae60ca/verification_runtime/root/usr/bin/ghdl-mcode",
+    "--synth",
+    "--std=08",
+    "top_nexys4ddr"
+  ],
+  "returncode": 0,
+  "top": "top_nexys4ddr",
+  "configuration": "all production default generics",
+  "tool": "GHDL 5.0.1 (Debian 5.0.1+dfsg-1+b1) [Dunoon edition]\n Compiled with GNAT Version: 14.2.0\n static elaboration, mcode JIT code generator\nWritten by Tristan Gingold.\n\nCopyright (C) 2003 - 2025 Tristan Gingold.\nGHDL is free software, covered by the GNU General Public License.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n",
+  "netlist_bytes": 330964,
+  "source_sha256": {
+    "src/core/common/audio_pkg.vhd": "b7fd5cb7f0984d03e591e378ef3f3e5523612319642e1c34a4642ad2880f87ec",
+    "src/core/common/sample_tick_generator.vhd": "12a7431e4a7da941f3e7d796470b3ec13ed5c16e18123b4de32975a9b9f42a1c",
+    "src/core/common/input_synchronizer.vhd": "d721ebad389e10918681d1e8c34923817cbdb2f90c93789b1a674bd79f97a797",
+    "src/core/common/button_debouncer.vhd": "9f2be76c3d09745c4d601f4aa7fe1bd851bc5e4c0fe4c9fa278cdfca7cb5e173",
+    "src/core/interfaces/uart_rx.vhd": "eb8d32a94cab0ea96b4942abcbce3d1bd737e0460c57c65693311559f4d8d171",
+    "src/core/interfaces/pdm_capture.vhd": "fd133ba91b0c4bb547147706f67104116b6d4e0c730331593fa1d86eb6a86e41",
+    "src/core/control/note_command_decoder.vhd": "b7d7795c84be36be65739ee69a434e8a2f776242dfc8237d3eb7b2fd5dff1c69",
+    "src/core/control/note_event_manager.vhd": "33cb74be46c7d31478d9e09a67c837c0003a29960cb400900989ecc7991c1ec4",
+    "src/core/control/note_input_arbiter.vhd": "06e7031e55621809f3ab8469d5c2b104257abf9570bbe8b2d8a5bde35fbb461a",
+    "src/core/memory/sample_ram.vhd": "530abb8ed2b31cc91091fb9a975148952a4eff5c15f3a7c006b97bc324701fff",
+    "src/core/memory/record_controller.vhd": "2d6f45b5253d02be75f6236933eeafb9aa44bfadca4192ce46b130eebf213e64",
+    "src/core/audio/pdm_decimator.vhd": "c1d2bb2040586ce26ac91d6f5fcf9ee3585a6c0e91d5a62957a053cdeadbfa88",
+    "src/core/audio/dc_blocker.vhd": "a66776000886fdb289e8fa9ee1f0577dfd5e340d04277a986ab8b99c6c33a792",
+    "src/core/audio/phase_accumulator.vhd": "80440714cc970f38a6c476a381713d6e330ce5d5698f474b0f2156ca9463d4ab",
+    "src/core/audio/linear_interpolator.vhd": "866df4ed592f925ee62f39c101e97fa396a4e4f561d3c021c2399e6ae9810ccf",
+    "src/core/audio/sample_player.vhd": "0a0fe06bb6ffb3d1fcf5c4a7fd88042a3b3ba27ce9501eb86207b64a2e8a1c3c",
+    "src/core/audio/adsr_envelope.vhd": "b94d242f6138faaf9ec295fd02561ef7ea90d06bd3d7a2ccf2748a09fc45aa51",
+    "src/core/audio/audio_gain.vhd": "a0da2e492550715f9d0fded8fe0fca23b1786558ac42a69139b3c1d5960207ce",
+    "src/core/effects/distortion.vhd": "71587d2ac25fd7af8eb07b95cc3fdfdb8b5a715af36c00f9a238c8a8e4f49895",
+    "src/core/effects/delay_effect.vhd": "01cd3a00f241301496e6f5c51965f18088cb8fc438e0628ae82a48a1855fd337",
+    "src/core/interfaces/pwm_generator.vhd": "a81519f174cf94fba7fe8a3ecf52f971f5fc70713ecf69651dc820876d1cb45a",
+    "src/core/audio/sampler_core.vhd": "29e655fec6804f5b21684c5d37aa85dc92b46ae4db060fa914b3c3f933a19d74",
+    "src/platform/nexys4ddr/top_nexys4ddr.vhd": "b71c56ea659a6e0cc53668bdfe3fde695ada27f946e980e23deaadb176b1b0c3"
+  },
+  "manifest_sha256": "5a1f49c71604fad2b64e049d68b6ba271167314673689d87956b7b1bad00b791",
+  "limitations": "Generic GHDL synthesis frontend only. No Vivado mapping, utilization, routed timing, CDC, DRC, bitstream or hardware test was performed."
+}
